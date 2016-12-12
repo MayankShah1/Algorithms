@@ -1,5 +1,5 @@
 # import QuickSort to use partition function
-import QuickSort
+import RandomizedQuicksort
 
 # Quick Select function
 def quickselect(array, low, high, i):
@@ -13,7 +13,7 @@ def quickselect(array, low, high, i):
     if low >= high:
         return array[low]
 
-    q = QuickSort.partition(array, low, high)
+    q = RandomizedQuicksort.random_partition(array, low, high)
     # k = rank(array[q])
     k = q - low + 1
 
@@ -23,6 +23,7 @@ def quickselect(array, low, high, i):
         return quickselect(array, low, q - 1, i)
     else:
         return quickselect(array, q + 1, high, i - k)
+
 
 
     
