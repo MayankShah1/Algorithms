@@ -2,7 +2,8 @@ def binary_search(numbers, key):
 
 	'''(list of int, int) -> int
 
-	Returns the position of key in number
+	Returns the position of key in number 
+	which is sorted.
 
 	>>> binary_search([1,5,6,8,2,4,10],4)
 	3
